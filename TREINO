@@ -1,0 +1,344 @@
+html>
+<head>
+    <!--Aba do Navegador-->
+    <title>Curso de HTML e CSS</title>
+    
+    <!--Espaço na tela do site-->
+    <style>
+      
+      body{
+        padding-bottom: 600px;
+       }
+    
+    </style>
+
+
+<!--Adicionando arquivo de CSS-->
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+    <body>
+        <h1>Testando os comandos</h1>
+        <p>Algum texto do meu site</p>
+        <h2> outro titulo</h2>
+        <h3>titulo 3</h3>
+        <h2>Alguma coisa</h2>
+        <h5>titulo2</h5>
+       
+        <!--Atribuir link-->
+        <a href="https://www.google.com.br">acessar o Google</a>
+        <hr /> 
+        <br />
+
+
+    <h6>Testeando titulos e fechamento</h6>
+    <br />
+    <hr />
+    <!--inserir imagens-->
+    
+    <img src="img/meteoro.jpg" />
+    <hr>
+    <img src="img/praia.jpg" alt="Uma Praia em um dia de sol" />
+    <hr>
+    <img src="https://apexensino.com.br/wp-content/uploads/2017/11/html-css-javascript.jpg"/>
+    <hr>
+    <!--inserir cores-->
+    
+    <p style="color: red">Testando o CSS</p>
+
+    <!-- DIV -->
+
+    <div>
+    
+    <h3> Camiseta Oakley</h3>
+    <p>R$ 59,99</p>
+    <a href="#">Comprar</a>
+    
+    </div>
+    <hr />
+    <!--Tabelas-->
+
+    <table>
+    <thead>
+        <tr>
+            <th>ID:</th>
+            <th>Nome:</th>
+        </tr>
+    
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Rhuan</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Lucas</td>
+        </tr>
+    </tbody>
+
+   </table>
+<hr />
+<!-- Listas não ordenadas-->
+    <ul>
+       <li>uva</li> 
+       <li>maçã</li>
+       <li>pera</li>
+       <li>mamão</li>
+
+
+    </ul>
+<!--Listas ordenadas-->
+    <hr />
+    
+    <ol>
+        <li>Estudar HTML</li>
+        <li>Estudar CSS</li>
+        <li>Estudar JavaScript</li>
+    
+    </ol>
+<!--Elementos de blocos e Inline-->
+    <p>Parágrafo</p>
+    <p>Outro Parágrafo</p>
+    <span>na mesma</span>
+    <span>linha</span>
+    <p>Clique neste <a href="#">Link</a></p>
+
+    <!--Integração com CSS-->
+<h1>Testando Integração</h1>
+   
+     <hr />
+
+    <!--Testando atributo ID-->
+    <h3 id="title">Primeiro Título</h3>
+    <h3 id="other">Segundo Titúlo</h3>
+
+    <!-- Classes-->
+
+    <p class="text">Um paragrafo</p>
+    <p class="text">Outro Paragrafo</p>
+    <p class="text">Último Paragrafo</p>
+
+   <!-- Background-->
+    
+   <p class="Background">Mude o meu Background</p>
+
+<!--Dois elementos em uma regra-->
+
+<p>Netflix</p>
+<p class="title-small">Seja bem-vindo !</p>
+
+
+<!--Imagem de Fundo/ Backgroud-image -->
+
+<h3 class="background-image">Céu Estrelado</h3>
+
+<!--Conceito Box model/ Largura e Altura-->
+
+<div id="width-height"></div>
+
+
+<!--Padding-->
+<div id="padding">Testando Padding</div>
+
+<!--Margem-->
+
+<div id="margin">Testando Margem</div>
+
+<!--Borda-->
+
+<div id="border">Netflix</div>
+
+<!--Arredondar/ raio da Borda-->
+
+<div id="border-radius">Netflix</div>
+
+<!--Alinhamento de texto-->
+<div id=center>
+<p>Netflix</p>
+
+<!--Decoration-->
+
+<p id="underline">Texto com underline</p>
+<p id="line">linha no texto</p>
+<a href="sem-underline">Link</a>
+
+
+<!--Transform-->
+
+<p id="lower">TODO EM CAIXA BAIXA</p>
+<P ID="upper">todo em caixa alta</P>
+
+
+<!--alteração de fonte-->
+
+<p id="serif">Fonte Serifada</p>
+<p id="sans-serif">Fonte Sem serifa</p>
+<p id="cursive">Fonte Cursiva</p>
+
+
+
+</div>
+
+
+</body>
+</html>
+-------------------------------------------------------------
+CSS
+/*Integração inicial*/
+
+h1{
+    color: rgb(2, 147, 2);
+    font-size: 40px;
+}
+
+/* Atributo ID */
+
+#other{
+    color: rgb(105, 95, 26);
+    font-size: 40px;
+}
+
+#title{
+    color:chocolate;
+    font-size: 60px;
+    
+
+}
+
+/* Classes */
+
+.text{
+    color: darkorchid;
+    font-size: 30px;
+}
+
+/* Backgroud mudar cor de fundo do paragrafo */
+
+.background{
+    background-color: aquamarine;
+    color: rgb(40, 8, 245);
+    font-size: 45px;
+}
+
+/* Dois elementos em uma regra*/
+
+p, .title-small{ 
+
+color: rgb(95, 0, 0);
+font-size: 60px;
+
+}
+
+.title-small{
+    color: black;
+    font-size: 20px;
+}
+
+/*Imagem de Fundo/ Backgroud-image*/
+
+.background-image {
+    background-image: url("../img/meteoro.jpg");
+    color: rgb(133, 133, 161);
+    padding: 30px;
+    font-size: 30px;
+}
+/* Largura e Altura*/
+
+#width-height{
+    width: 200px;
+    height: 100px;
+    background-color: aquamarine;
+}
+
+/* Padding*/
+
+#padding{
+    background-color: rgb(229, 198, 0);
+    font-size: 35px;
+    padding: 30px;
+}
+
+/*Margem*/
+
+#margin{
+    width: 200px;
+    height: 100px;
+    background-color: blueviolet;
+    margin: 25px;
+}
+
+/* Borda*/
+
+#border{
+   border: 6px solid rgb(120, 2, 2);
+   font-size: 80px;
+   background-color: rgb(120, 2, 2);
+   width: 300;
+   height: 100;
+  margin: 50;
+  padding: 30;
+}
+
+#border-radius{
+    border-radius: 30px;
+    font-size: 80px;
+    background-color: rgb(120, 2, 2);
+    width: 300;
+    height: 100;
+   margin: 50;
+   padding: 30;
+   border: 15px dashed black;
+   
+}
+
+#center {
+   text-align: center;
+   
+}
+
+  
+
+p{
+    font-size: 20px;
+}
+
+/*Decoration*/
+
+#underline{
+    text-decoration: underline;
+}
+
+#line{
+    text-decoration: line-through;
+}
+
+#sem-underline{
+    text-decoration: none;
+}
+
+/*Transform Maiuscula ou minuscula*/
+
+
+
+#upper{
+    text-transform: uppercase;
+}
+
+
+#lower{
+    text-transform: lowercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
